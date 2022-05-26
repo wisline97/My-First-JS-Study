@@ -1,5 +1,8 @@
-const a = 5;
+const a = 6;
+const b = 2;
+const myName = "Jisun";
 
-console.log(a + 10);
-console.log(a * 4);
-console.log(a / 1);
+console.log(a + b);
+console.log(a * b);
+console.log(a / b);
+console.log("Hello" + " World!" + " I'm " + myName);
