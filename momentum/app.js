@@ -1,14 +1,28 @@
-const a = 6;
-const b = 2;
-let myName = "Jisun";
+function practice(nameOfPerson, age) {
+  console.log("Hello My name is " + nameOfPerson + " and I'm " + age);
+}
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("Hello" + " World!" + " I'm " + myName);
+practice("nico", 23);
+practice("dal", 45);
+practice("Lynn", 26);
+practice("jisun", 26);
 
-myName = "zizi";
+function plus(a, b) {
+  console.log(a + b);
+}
 
-console.log("My Nickname is " + myName);
+function divide(a, b) {
+  console.log(a / b);
+}
 
-// DEFAULT const SOMETIMES let NEVER USE var
+divide(20, 10);
+plus(8, 4);
+
+const player = {
+  name: "nico",
+  sayHello: function (otherPersonName) {
+    console.log("Hi! " + otherPersonName + " Nice to meet you");
+  },
+};
+
+player.sayHello(player.name);
