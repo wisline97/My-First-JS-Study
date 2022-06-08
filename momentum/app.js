@@ -1,28 +1,32 @@
-function practice(nameOfPerson, age) {
-  console.log("Hello My name is " + nameOfPerson + " and I'm " + age);
-}
-
-practice("nico", 23);
-practice("dal", 45);
-practice("Lynn", 26);
-practice("jisun", 26);
-
-function plus(a, b) {
-  console.log(a + b);
-}
-
-function divide(a, b) {
-  console.log(a / b);
-}
-
-divide(20, 10);
-plus(8, 4);
-
-const player = {
-  name: "nico",
-  sayHello: function (otherPersonName) {
-    console.log("Hi! " + otherPersonName + " Nice to meet you");
+const calculator = {
+  add: function (a, b) {
+    return a + b;
+  },
+  minus: function (a, b) {
+    return a - b;
+  },
+  divide: function (a, b) {
+    return a / b;
+  },
+  multi: function (a, b) {
+    return a * b;
+  },
+  powerof: function (a, b) {
+    return a ** b;
   },
 };
 
-player.sayHello(player.name);
+const addResult = calculator.add(2, 3);
+console.log(addResult);
+
+const minusResult = calculator.minus(addResult, 3);
+console.log(minusResult);
+
+const divideResult = calculator.divide(12, minusResult);
+console.log(divideResult);
+
+const multiResult = calculator.multi(4, divideResult);
+console.log(multiResult);
+
+const powerofResult = calculator.powerof(multiResult, divideResult);
+console.log(powerofResult);
